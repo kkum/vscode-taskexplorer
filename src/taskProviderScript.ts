@@ -49,6 +49,13 @@ let scriptTable = {
 		args: ['/c'],
 		enabled: configuration.get('enableBatch')
 	},
+	cmd: {
+		exec: 'cmd.exe',
+		type: 'batch',
+		args: ['/c'],
+		enabled: configuration.get('enableBatch')
+	},
+
 	nsi: {
 		exec: configuration.get('pathToNsis') ? configuration.get('pathToNsis') : 'makensis.exe',
 		type: 'nsis',
